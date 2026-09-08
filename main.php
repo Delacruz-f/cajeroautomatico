@@ -4,8 +4,8 @@ require_once "Cajero.php";
 
 // Crear una cuenta de ahorros
 $cuenta = new CuentaAhorros(
-    "00123456789",
-    "Brenda",
+    "85796548712",
+    "Fernando",
     1000,
     "Cuenta de Ahorros"
 );
