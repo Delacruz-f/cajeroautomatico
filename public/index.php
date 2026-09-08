@@ -1,9 +1,12 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
+use App\Cajero;
+use App\herencia\CuentaAhorros;
 
-require_once "Cajero.php";
 
 // Crear una cuenta de ahorros
 $cuenta = new CuentaAhorros(
+
     "85796548712",
     "Fernando",
     1000,

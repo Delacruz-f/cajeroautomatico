@@ -1,6 +1,7 @@
 <?php
+namespace App\herencia;
 
-require_once __DIR__ . "/../interface/OperacionBancaria.php";
+use App\interface\OperacionBancaria;
 
 class Cuenta implements OperacionBancaria
 {
@@ -62,8 +63,6 @@ class Cuenta implements OperacionBancaria
             echo "El monto debe ser mayor que 0." . PHP_EOL;
         }
     }
-
-    // Retirar dinero
     public function retirar($monto)
     {
         if ($monto <= 0) {

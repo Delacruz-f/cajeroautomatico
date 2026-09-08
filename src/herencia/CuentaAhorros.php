@@ -1,6 +1,7 @@
 <?php
+namespace App\herencia;
+use App\herencia\Cuenta;
 
-require_once "Cuenta.php";
 
 class CuentaAhorros extends Cuenta
 {
@@ -9,7 +10,6 @@ class CuentaAhorros extends Cuenta
     // Constructor
     public function __construct($numeroCuenta, $titular, $saldo, $tipoCuenta)
     {
-        // Llamamos al constructor de la clase padre
         parent::__construct($numeroCuenta, $titular, $saldo);
 
         $this->tipoCuenta = $tipoCuenta;

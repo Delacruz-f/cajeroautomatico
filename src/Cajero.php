@@ -1,6 +1,5 @@
 <?php
-
-require_once "herencia/CuentaAhorros.php";
+namespace App;
 
 class Cajero
 {
